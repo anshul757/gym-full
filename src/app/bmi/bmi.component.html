@@ -1,0 +1,581 @@
+<html>
+      <head>
+          <meta charset="utf-8">
+          <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+          <title>Contact Form - One page  - Bootsnipp.com</title>
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+          <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+          <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+      <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <section id="contact">
+          <div class="section-content">
+            <br>
+              <h1 class="section-header"> <span style="color:#D62650" class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">{{ 'bmiHeading' | translate }}</span></h1>
+              <h3>{{ 'bmiDescription' | translate }}</h3>
+          </div>
+          <div class="contact-section">
+              <div class="container">
+                  <form ngForm="bmiForm">
+                      <div class="col-md-6 form-line">
+                          <div class="form-group">
+                              <label for="exampleInputUsername">{{ 'bmiWeight' | translate }}</label>
+                              <input type="text" class="form-control" id="" placeholder=" Enter weight" [(ngModel)]="weight" name="weight">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail">{{ 'bmiHeight' | translate }}</label>
+                                <input type="email" class="form-control" id="exampleInputEmail" placeholder=" Enter height" [(ngModel)]="height" name="height" >
+                              </div>
+                              <div class="form-group">
+                                  <button type="button" class="btn btn-default submit" (click)="onSubmit()"><i class="fa fa-paper-plane" aria-hidden="true"></i>{{ 'bmiButton' | translate }}</button>
+                                </div>
+                       </div>
+                       <div class="col-md-6">
+                          <div>
+                            <h1>{{ 'bmiAns' | translate }}</h1>
+
+                              <h2 style="color: #000000;">{{bmiValue}}</h2>
+
+                              <h2 style="color: #000000;">{{value}}</h2>
+
+
+                              </div>
+                       </div>
+
+                  </form>
+
+              </div>
+          </div>
+        </section>
+        <div class="section-content">
+            <br>
+              <h1 class="section-header"> <span style="color:#D62650" class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">{{ 'bmiindexChart' | translate }}</span></h1>
+              <h3>{{ 'bmiChartDescription' | translate }}</h3>
+          </div>
+
+          <div class="container">
+    
+            <div class="table-responsive">           
+            <table class="table">
+              <thead>
+                  <!-- <tr class="hide_all">
+                      <td>31</td>
+                      
+                    </tr> -->
+                <tr class="a">
+                  <td class="a">40</td>  
+                  <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:17">17</span></td>
+                  <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:17">17</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:16">16</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:15">15</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:15">15</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:14">14</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:14">14</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:13">13</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:13">13</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:12">12</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:12">12</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:12">12</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:11">11</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:11">11</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:11">11</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:10">10</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:10">10</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:10">10</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:9">9</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:9">9</span></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td class="a">45</td>  
+                    <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:19">19</span></td>
+                    <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:19">19</span></td>
+                    <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:18">18</span></td>
+                    <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:17">17</span></td>
+                    <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:17">17</span></td>
+                    <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:16">16</span></td>
+                    <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:16">16</span></td>
+                    <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:15">15</span></td>
+                    <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:15">15</span></td>
+                    <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:14">14</span></td>
+                    <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:14">14</span></td>
+                    <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:13">13</span></td>
+                    <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:13">13</span></td>
+                    <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:12">12</span></td>
+                    <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:12">12</span></td>
+                    <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:12">12</span></td>
+                    <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:11">11</span></td>
+                    <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:11">11</span></td>
+                    <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:11">11</span></td>
+                    <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:10">10</span></td>
+                </tr>
+               <tr>
+                  <td class="a">50</td>  
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:22">22</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:21">21</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:20">20</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:19">19</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:19">19</span></td>
+                  <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:18">18</span></td>
+                  <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:17">17</span></td>
+                  <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:17">17</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:16">16</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:16">16</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:15">15</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:15">15</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:14">14</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:14">14</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:13">13</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:13">13</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:13">13</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:12">12</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:12">12</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:11">11</span></td>
+               </tr>
+        
+               <tr>
+                  <td class="a">55</td>  
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:24">24</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:23">23</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:22">22</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:21">21</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:20">20</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:20">20</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:19">19</span></td>
+                  <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:18">18</span></td>
+                  <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:18">18</span></td>
+                  <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:17">17</span></td>
+                  <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:17">17</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:16">16</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:16">16</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:15">15</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:15">15</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:14">14</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:14">14</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:13">13</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:13">13</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:13">13</span></td>
+               </tr>
+        
+               <tr>
+                  <td class="a">60</td>  
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:26">26</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:25">25</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:24">24</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:23">23</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:22">22</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:22">22</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:21">21</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:20">20</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:19">19</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:19">19</span></td>
+                  <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:18">18</span></td>
+                  <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:18">18</span></td>
+                  <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:17">17</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:16">16</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:16">16</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:15">15</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:15">15</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:15">15</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:14">14</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:14">14</span></td>
+               </tr>
+        
+               <tr>
+                  <td class="a">65</td>  
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:28">28</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:27">27</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:26">26</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:25">25</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:24">24</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:23">23</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:22">22</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:22">22</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:21">21</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:20">20</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:19">19</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:19">19</span></td>
+                  <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:18">18</span></td>
+                  <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:18">18</span></td>
+                  <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:17">17</span></td>
+                  <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:17">17</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:16">16</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:16">16</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:15">15</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:15">15</span></td>
+               </tr>
+        
+               <tr>
+                  <td class="a">70</td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:30">30</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:29">29</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:28">28</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:27">27</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:26">26</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:25">25</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:24">24</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:23">23</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:23">23</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:22">22</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:21">21</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:20">20</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:20">20</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:19">19</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:19">19</span></td>
+                  <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:18">18</span></td>
+                  <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:18">18</span></td>
+                  <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:17">17</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:17">16</span></td>
+                  <td class="severe_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:17">16</span></td>   
+               </tr>
+        
+               <tr>
+                  <td class="a">75</td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:32">32</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:31">31</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:30">30</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:29">29</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:28">28</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:27">27</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:26">26</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:25">25</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:24">24</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:23">23</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:23">23</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:22">22</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:21">21</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:21">21</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:20">20</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:19">19</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:19">19</span></td>
+                  <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:18">18</span></td>
+                  <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:18">18</span></td>
+                  <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:17">17</span></td>
+               </tr>
+        
+               <tr>
+                  <td class="a">80</td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:">35</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:">33</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:">32</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:">31</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:30">30</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:29">29</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:28">28</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:27">27</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:26">26</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:25">25</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:24">24</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:23">23</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:23">23</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:22">22</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:21">21</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:21">21</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:20">20</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:19">19</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:19">19</span></td>
+                  <td class="moderate_thinness"><span matTooltip="{{ 'bmiHeading' | translate }}:18">18</span></td>
+               </tr>
+        
+               <tr>
+                  <td class="a">85</td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:37">37</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:35">35</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:34">34</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:33">33</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:32">32</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:30">30</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:29">29</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:28">28</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:27">27</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:27">27</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:26">26</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:25">25</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:24">24</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:23">23</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:23">23</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:22">22</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:21">21</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:21">21</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:20">20</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:19">19</span></td>
+               </tr>
+        
+               <tr>
+                  <td class="a">90</td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:39">39</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:37">37</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:36">36</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:35">35</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:33">33</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:32">32</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:31">31</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:30">30</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:29">29</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:28">28</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:27">27</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:26">26</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:25">25</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:25">25</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:24">24</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:23">23</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:23">23</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:22">22</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:21">21</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:21">21</span></td>
+               </tr>
+        
+               <tr>
+                  <td class="a">95</td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:41">41</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:40">40</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:38">38</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:37">37</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:35">35</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:34">34</span></td>
+                  <td class="obese"><span matTooltip="bmi {{ 'bmiHeading' | translate }}:33">33</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:32">32</span></td>
+                  <td class="obese"><span matTooltip="bmi index:{{ 'bmiHeading' | translate }}:31">31</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:30">30</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:29">29</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:28">28</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:27">27</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:26">26</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:25">25</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:24">24</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:24">24</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:23">23</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:22">22</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:22">22</span></td>
+               </tr>
+        
+               <tr>
+                  <td class="a">100</td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:43">43</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:42">42</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:40">40</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:39">39</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:37">37</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:36">36</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:35">35</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:33">33</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:29">29</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:31">31</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:30">30</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:29">29</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:28">28</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:27">27</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:27">27</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:26">26</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:25">25</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:25">25</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:24">24</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:23">23</span></td>
+               </tr>
+        
+               <tr>
+                  <td class="a">105</td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:45">45</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:44">44</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:42">42</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:41">41</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:39">39</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:38">38</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:36">36</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:35">35</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:34">34</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:33">33</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:32">32</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:31">31</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:30">30</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:29">29</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:28">28</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:27">27</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:26">26</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:25">25</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:25">25</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:24">24</span></td>
+               </tr>
+        
+               <tr>
+                  <td class="a">110</td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:48">48</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:46">46</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:44">44</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:42">42</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:41">41</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:39">39</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:38">38</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:37">37</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:36">36</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:34">34</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:33">33</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:32">32</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:31">31</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:30">30</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:29">29</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:28">28</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:28">28</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:27">27</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:26">26</span></td>
+                  <td class="normal"><span matTooltip="{{ 'bmiHeading' | translate }}:25">25</span></td>
+               </tr>
+        
+               <tr>
+                  <td class="a">115</td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:50">50</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:48">48</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:46">46</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:44">44</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:43">43</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:41">41</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:40">40</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:38">38</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:37">37</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:36">36</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:35">35</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:34">34</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:33">33</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:32">32</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:31">31</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:30">30</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:29">29</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:28">28</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:27">27</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:26">26</span></td>
+               </tr>
+        
+               <tr>
+                  <td class="a">120</td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:52">52</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:50">50</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:48">48</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:46">46</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:45">45</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:43">43</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:42">42</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:40">40</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:39">39</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:37">37</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:36">36</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:35">35</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:34">34</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:33">33</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:32">32</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:31">31</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:30">30</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:29">29</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:28">28</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:27">27</span></td>
+               </tr>
+        
+               <tr>
+                  <td class="a">125</td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:54">54</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:52">52</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:50">50</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:48">48</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:46">46</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:45">45</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:43">43</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:42">42</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:40">40</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:39">39</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:38">38</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:37">37</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:35">35</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:34">34</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:33">33</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:32">32</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:31">31</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:30">30</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:29">29</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:29">29</span></td>
+               </tr>
+        
+               <tr>
+                  <td class="a">130</td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:56">56</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:54">54</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:52">52</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:50">50</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:48">48</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:47">47</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:45">45</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:43">43</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:42">42</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:41">41</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:39">39</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:38">38</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:37">37</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:36">36</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:35">35</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:34">34</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:33">33</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:32">32</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:31">31</span></td>
+                  <td class="overweight"><span matTooltip="{{ 'bmiHeading' | translate }}:30">30</span></td>
+               </tr>
+        
+               <tr>
+                  <td class="a">135</td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:58">58</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:56">56</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:54">54</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:52">52</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:50">50</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:48">48</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:47">47</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:45">45</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:44">44</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:42">42</span></td>
+                  <td class="obese3"><span matTooltip="{{ 'bmiHeading' | translate }}:41">41</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:39">39</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:38">38</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:37">37</span></td>
+                  <td class="obese2"><span matTooltip="{{ 'bmiHeading' | translate }}:36">36</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:35">35</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:34">34</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:33">33</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:32">32</span></td>
+                  <td class="obese"><span matTooltip="{{ 'bmiHeading' | translate }}:31">31</span></td>
+               </tr>
+        
+               <tr class="a">
+                <td> </td>
+                 <td class="b">152</td>
+                 <td class="b">155</td>
+                 <td class="b">158</td>
+                 <td class="b">161</td>
+                 <td class="b">164</td>
+                 <td class="b">167</td>
+                 <td class="b">170</td>
+                 <td class="b">173</td>
+                 <td class="b">176</td>
+                 <td class="b">179</td>
+                 <td class="b">182</td>
+                 <td class="b">185</td>
+                 <td class="b">188</td>
+                 <td class="b">191</td>
+                 <td class="b">194</td>
+                 <td class="b">197</td>
+                 <td class="b">200</td>
+                 <td class="b">203</td>
+                 <td class="b">206</td>
+                 <td class="b">209</td>
+               </tr>
+              </tbody>
+            </table>
+            </div>
+            <div class="container">
+            <img src="./assets/imgs/footer.png" class="img-responsive" alt="Responsive image" style="margin: auto">
+            
+          </div>
+          </div>
+          </body>
+          </html>

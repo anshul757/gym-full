@@ -1,0 +1,68 @@
+<html>
+  <body>
+    <div class="">
+      <div class="">
+          <footer>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-3 col-sm-6 footer-col">
+                    <div class="logofooter"><img src="./assets/imgs/logo.png"></div>
+                    <br>
+                    <p>{{ 'footerDescription' | translate }}</p>
+                    <p><i class="fa fa-map-pin"></i>{{ 'footerAdderess' | translate }}</p>
+                    <p><i class="fa fa-phone"></i>{{ 'footerPhone' | translate }}</p>
+                    <p><i class="fa fa-envelope"></i>{{ 'footerEmail' | translate }}</p>
+
+                  </div>
+                  <div class="col-md-3 col-sm-6 footer-col">
+                    <h6 class="heading7">{{ 'linkHeading' | translate }}</h6>
+                    <ul class="footer-ul">
+                      <li><a href="#">{{ 'menu1' | translate }}</a></li>
+                      <li><a href="#">{{ 'menu2' | translate }}</a></li>
+                      <li><a href="#">{{ 'menu3' | translate }}</a></li>
+                      <li><a routerLink="exsi">{{ 'menu4' | translate }}</a></li>
+                      <li><a href="#">{{ 'menu5' | translate }}</a></li>
+                      <li><a href="#">{{ 'menu6' | translate }}</a></li>
+                      <li><a href="#">{{ 'menu7' | translate }}</a></li>
+                      <li><a href="#">{{ 'menu8' | translate }}</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3 col-sm-6 footer-col">
+                    <h6 class="heading7">{{ 'subscribe' | translate }}</h6>
+                    <form (submit)="onUserSubscribed()">
+                    <div class="post">
+                    <input type="mail"  [(ngModel)]="email" name="email" style="border: solid 2px #D62650; background: transparent; color: #fff; border-radius:5px" placeholder="{{ 'subscribePlaceholder' | translate }}">
+                    <br>
+                    <br>
+                    <input type="submit" class="btn btn-info"  role="button" value="{{ 'subscribeButton' | translate }}" style="margin-left:40px; background:#D62650; border: solid #D62650 ">
+                    </div>
+                  </form>
+                  </div>
+                  <div class="col-md-3 col-sm-6 footer-col">
+                    <h6 class="heading7">{{ 'socialLinks' | translate }}</h6>
+                    <ul class="footer-social">
+                      <li><a href="" class="fa fa-linkedin social-icon linked-in" aria-hidden="true"></a></li>
+                      <li><a href="" class="fa fa-facebook social-icon facebook" aria-hidden="true"></a></li>
+                      <li><a href="" class="fa fa-twitter social-icon twitter" aria-hidden="true"></a></li>
+                      <li><a href="" class="fa fa-google-plus social-icon google" aria-hidden="true"></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </footer>
+
+
+            <div class="copyright">
+
+                  <p style="margin-left: 40%">{{ 'copyRights' | translate }}</p>
+
+
+              </div>
+
+
+
+
+      </div>
+    </div>
+  </body>
+</html>

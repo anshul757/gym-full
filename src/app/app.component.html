@@ -1,0 +1,175 @@
+<html>
+    <head>
+        <base href="/">
+        <meta charset="utf-8">
+        <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+        <title>Bootstrap Image Carousel Slider with Animate.css - Bootsnipp.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.5.1/animate.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+      </head>
+
+  <body>
+    <!-- preloader start -->
+    <!-- <div id="preloader-area">
+        <div class="preloader"></div>
+    </div> -->
+
+    <!-- preloader end -->
+
+      <!-- <div class="container-fluid"> -->
+        <!-- menu part start -->
+        <nav class="[ navbar navbar-fixed-top ][ navbar-bootsnipp animate ]" role="navigation">
+            <div class="[ container ]">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="[ navbar-header ]">
+              <button type="button" class="[ navbar-toggle ]" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="[ sr-only ]">Toggle navigation</span>
+                <span class="[ icon-bar ]"></span>
+                <span class="[ icon-bar ]"></span>
+                <span class="[ icon-bar ]"></span>
+              </button>
+              <div class="[ animbrand ]">
+                <a class="" href="#"><img src="./assets/imgs/logo.png" style="position: absolute; margin-top: 7px"></a>
+              </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="[ collapse navbar-collapse ]" id="bs-example-navbar-collapse-1">
+              <ul class="[ nav navbar-nav navbar-right ]">
+                <li class="[ visible-xs ]">
+
+                </li>
+                <li><a href="#" routerLink="/caloriemeter" class="[ animate ]">{{ 'menu1' | translate }}</a></li>
+                <li><a href="#" routerLink="/bmi" class="[ animate ]">{{ 'menu2' | translate }}</a></li>
+                <li><a href="#" routerLink="/planner"  class="[ animate ]">{{ 'menu3' | translate }}</a></li>
+                <li><a href="#" routerLink="/exsi" class="[ animate ]">{{ 'menu4' | translate }}</a></li>
+                <li><a href="#" routerLink="/yoga" class="[ animate ]">{{ 'menu5' | translate }}</a></li>
+                <li><a class="animate" routerLink="/registration"  href="#register">{{ 'menu6' | translate }}</a></li>
+                <li><a class="animate" routerLink="/login"  href="#login">{{ 'menu7' | translate }}</a></li>
+                <li><a class="animate" routerLink="/contact" href="#login">{{ 'menu8' | translate }}</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="setting" (click)="showDrop()">
+          <i class="fa fa-cog"></i>
+        </div>
+        <div class="language-dropdown" *ngIf="show">
+            <ul>
+                <li (click)="switchLanguage('en')">English</li>
+                <li (click)="switchLanguage('guj')">Gujarati</li>
+            </ul>
+        </div>
+      <script type="text/javascript">
+      $(function() {
+
+          $('a[href="#toggle-search"], .navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn[type="reset"]').on('click', function(event) {
+          event.preventDefault();
+          $('.navbar-bootsnipp .bootsnipp-search .input-group > input').val('');
+          $('.navbar-bootsnipp .bootsnipp-search').toggleClass('open');
+          $('a[href="#toggle-search"]').closest('li').toggleClass('active');
+
+          if ($('.navbar-bootsnipp .bootsnipp-search').hasClass('open')) {
+            /* I think .focus dosen't like css animations, set timeout to make sure input gets focus */
+            setTimeout(function() {
+              $('.navbar-bootsnipp .bootsnipp-search .form-control').focus();
+            }, 100);
+          }
+        });
+
+        $(document).on('keyup', function(event) {
+          if (event.which == 27 && $('.navbar-bootsnipp .bootsnipp-search').hasClass('open')) {
+            $('a[href="#toggle-search"]').trigger('click');
+          }
+        });
+
+      });
+      </script>
+
+<!-- menu part end -->
+
+<!-- footer part start -->
+
+  <!-- </div> -->
+  <!-- foooter part end -->
+
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+
+
+</body>
+<!-- preloader script start -->
+<script type="text/javascript">
+
+// $(document).ready(function(){
+
+// })
+
+
+</script>
+<!-- preloader script end -->
+<script type="text/javascript">
+$(document).ready(function() {
+  console.log('hii');
+
+  var overlay = document.getElementById("preloader-area");
+    overlay.style.display='none';
+})
+
+
+
+$(function() {
+
+  window.addEventListener('DOMContentLoaded', function(){
+
+  })
+
+$('a[href="#toggle-search"], .navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn[type="reset"]').on('click', function(event) {
+event.preventDefault();
+$('.navbar-bootsnipp .bootsnipp-search .input-group > input').val('');
+$('.navbar-bootsnipp .bootsnipp-search').toggleClass('open');
+$('a[href="#toggle-search"]').closest('li').toggleClass('active');
+
+if ($('.navbar-bootsnipp .bootsnipp-search').hasClass('open')) {
+  /* I think .focus dosen't like css animations, set timeout to make sure input gets focus */
+  setTimeout(function() {
+    $('.navbar-bootsnipp .bootsnipp-search .form-control').focus();
+  }, 100);
+}
+});
+
+$(document).on('keyup', function(event) {
+if (event.which == 27 && $('.navbar-bootsnipp .bootsnipp-search').hasClass('open')) {
+  $('a[href="#toggle-search"]').trigger('click');
+}
+});
+
+});
+
+</script>
+
+<script type="text/javascript">
+  // $('.counter-count').each(function () {
+  //         $(this).prop('Counter',0).animate({
+  //             Counter: $(this).text()
+  //         }, {
+  //             duration: 5000,
+  //             easing: 'swing',
+  //             step: function (now) {
+  //                 $(this).text(Math.ceil(now));
+  //             }
+  //         });
+  //     });
+  // var a = 0;
+  // var interval = setInterval(function(){
+  //   a++;
+  //   $('.counter-count').text(a);
+  //   if(a==800) clearInterval(a);
+  // },200)
+  </script>
+</html>
+

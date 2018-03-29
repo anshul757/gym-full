@@ -1,0 +1,147 @@
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web&subset=latin,latin-ext);
+.main
+	{
+		margin-top: 30px;
+		background-color:#2a2a2a;
+		color: #D62650;
+		font-family: American Typewriter, serif;
+		font-weight: 1200;
+		text-align: left;
+		width: 100%;
+	}
+	.rectitle
+	{
+		color: #fff;
+		font-family: American Typewriter, serif;
+		font-weight: bold;
+		text-align: left;
+
+	}
+	.recipe-title-header, .nutrition-recipe, .content-single-reipe-wrapper h1, .content-single-reipe-wrapper h2 {
+    font-weight: 700 !important;
+
+}
+
+.recipe-title-header {
+    background-color: #D62650;
+    padding: 10px 0px 10px 5px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+
+}
+.recipe-action-btn {
+    margin-top: 20px;
+}
+.content-single-reipe-wrapper {
+    width: 92%;
+    margin: 0 auto;
+    font-family: 'Roboto Slab', serif !important;
+}
+.btn-custom-plan, .recipe-action-btn span a {
+    padding: 9px !important;
+    background: #ff5d24 !important;
+    color: white !important;
+    font-size: 14px !important;
+    font-family: 'Roboto Slab', serif !important;
+    border-radius: 0 !important;
+}
+.nutrition-recipe, .content-single-reipe-wrapper h1, .content-single-reipe-wrapper h2 {
+    font-weight: 700 !important;
+}
+.table-wrapper {
+    background-color: #ededed;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 50px;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+table {
+    background-color: transparent;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.ingredent-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+body, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, li, ol, p, pre, td, th, ul {
+    direction: ltr;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+li
+{
+	font-weight: bold;
+	font-size: 20px;
+}
+.block-comment {
+    display: inline-block;
+    padding-top: 50px;
+    width: 100%;
+}
+share-links span {
+    position: relative;
+    top: 0;
+    transition: top ease 0.2s;
+}
+sb-button {
+  margin: .3125em;
+}
+
+.sb-button, .sb-group {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+/* social button csss */
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+.social{
+    text-align:center;
+    width:120px;
+    height:120px;
+    float:left;
+    background:rgb(255,255,255);
+    border:1px solid rgb(204,204,204);
+    box-shadow:0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius:100px;
+    margin:0 10px 10px 0;
+    padding:19px;
+}
+.google-pluse:hover{background:#DD4B39;color:#FFF;}
+.facebook:hover{background:#3b5998;color:#FFF;}
+.twitter:hover{background:#00acee;color:#FFF;}
+.pinterest:hover{background:#c8232c;color:#FFF;}
+.linkedin:hover{background:#0e76a8;color:#FFF;}
+.skype:hover{background:#00aff0;color:#FFF;}
+.youtube:hover{background:#c4302b;color:#FFF;}
+.tumblr:hover{background:#34526f;color:#FFF;}
+

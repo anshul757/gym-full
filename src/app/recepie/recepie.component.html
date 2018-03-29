@@ -1,0 +1,157 @@
+<html>
+  <body>
+    <div class="container main">
+      <div class="row">
+        <div class="recipe-title-header">
+          <div class="container"> YOGURT</div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="content" #content data-html2canvas-ignore="true" >
+      <div class="content-single-reipe-wrapper">
+        <div class="recipe-action-btn">
+          <span></span>
+          <a id="btn_save_recipe_pdf" (click)="downloadpdf()" class="btn btn-custom-plan" data-recipe_id="1741">Save to PDF</a>
+        </div>
+        <div class="nutrition-recipe">
+          <h2>Nutrition per serving</h2>
+        </div>
+        <div class="row table-wrapper ">
+          <div class="col-md-6">
+            <table class="table single-recipe-table">
+              <tbody>
+                <tr>
+                  <td width="50%">CALORIES</td>
+                  <td width="50%">84 KCAL</td>
+                </tr>
+                <tr>
+                  <td width="50%">PROTEIN	</td>
+                  <td width="50%">10.2 g</td>
+                </tr>
+                <tr>
+                  <td width="50%">CARBS</td>
+                  <td width="50%">10.2 g</td>
+                </tr>
+                <tr>
+                  <td width="50%">FATS</td>
+                  <td width="50%">10.2 g</td>
+                </tr>
+                <tr>
+                  <td width="50%">SATURATED FAT</td>
+                  <td width="50%">10.2 g</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-6">
+            <table class="table single-recipe-table">
+              <tbody>
+                <tr>
+                  <td width="50%">MONOSATURATED FAT</td>
+                  <td width="50%">84 g</td>
+                </tr>
+                <tr>
+                  <td width="50%">POLYSATURATED FAT</td>
+                  <td width="50%">10.2 g</td>
+                </tr>
+                <tr>
+                  <td width="50%">SUGARS</td>
+                  <td width="50%">10.2 g</td>
+                </tr>
+                <tr>
+                  <td width="50%">FIBERS</td>
+                  <td width="50%">10.2 g</td>
+                </tr>
+                <tr>
+                  <td width="50%">SODIUM</td>
+                  <td width="50%">10.2 mg</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <hr>
+        <section class="ingredent-section">
+          <div class="row">
+            <div class="col-md-6">
+              <h2>Ingredients</h2>
+              <div class="igredent-row">
+                <table class="table igredent-table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <label class="recipe-select">50 GRAMS</label>
+                      </td>
+                      <td>
+                        <label class="recipe-select">MIXED BERRIES</label>
+                        <label>(STRAWBERIES, RASBERIES AND BLUEBERRIES)</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="recipe-select">100 GRAMS</label>
+                      </td>
+                      <td>
+                        <label class="recipe-select">PLAIN GREEK YOGURT
+                        </label>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <p>
+                <strong>
+                  PREAPRATIONS
+                </strong>
+              </p>
+              <ol>
+                <li> Place berries in a bowl and heat in the microwave</li>
+                <li> Mix the the contents of the bowl into the yogurt</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+        <hr>
+      </div>
+      <section class="single-recipe-footer">
+        <div class="row">
+          <div class="col-md-12">
+              <p style="text-align: center; font-weight: bold; font-size: 30px">
+                <strong>
+                  SHARE THIS
+                </strong>
+              </p>
+            <div class="col-md-3">
+              <button shareButton="facebook"class="social facebook">
+                <i class="fa fa-facebook fa-5x"></i>
+              </button>
+            </div>
+            <div class="col-md-3">
+              <button shareButton="twitter"class="social twitter">
+                <i class="fa fa-twitter fa-5x"></i>
+              </button>
+            </div>
+            <div class="col-md-3">
+              <button shareButton="pinterest" class="social pinterest">
+                <i class="fa fa-pinterest fa-5x"></i>
+              </button>
+            </div>
+            <div class="col-md-3">
+                <button shareButton="google" class="social google-pluse">
+                    <i class="fa fa-google-plus fa-5x"></i>
+                  </button>
+            </div>
+            <br>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script>
+    html2canvas(document.querySelector("#content")).then(canvas => {
+    document.body.appendChild(canvas)
+});
+  </script>
+</html>

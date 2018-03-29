@@ -1,0 +1,599 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+	.main
+	{
+		margin-top: 30px;
+		background-color:#2a2a2a;
+		color: #D62650;
+		font-family: American Typewriter, serif;
+		font-weight: 1200;
+		text-align: left;
+	}
+	.b
+	{
+		color: #D62650;
+		font-family: American Typewriter, serif;
+		font-weight: 1200;
+		text-align: center;
+
+	}
+	.rectitle
+	{
+		color: #fff;
+		font-family: American Typewriter, serif;
+		font-weight: bold;
+		text-align: left;
+
+	}
+	.rectitle1
+	{
+		color: #DCDCDC;
+		font-family: American Typewriter, serif;
+		font-weight: 1200;
+		text-align: left;
+
+	}
+	select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  width: 100%;
+  box-shadow: none;
+  border: 0 !important;
+  background:  #A9A9A9;
+  background-image: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  display: block;
+  width: 20em;
+  height: 3em;
+  width: 100%;
+  line-height: 3;
+  background: #A9A9A9;
+  overflow: hidden;
+  border-radius: .25em;
+}
+.select1 {
+  position: relative;
+  display: block;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #A9A9A9;
+  overflow: hidden;
+  border-radius: .25em;
+}
+
+select {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 0 0 .5em;
+  color: #fff;
+  cursor: pointer;
+}
+select::-ms-expand {
+  display: none;
+}
+.section-block{
+	border-bottom:1px solid #A9A9A9;
+	width: 100%;
+	margin-top:110px;
+
+}
+.section-block:after{
+	position: absolute;
+	content: '';
+	left:0;
+	right:0;
+	margin:auto;
+	width: 0px;
+	height: 0px;
+	display: block;
+	border-top:15px solid #A9A9A9;
+	border-left:15px solid transparent;
+	border-right:15px solid transparent;
+}
+.section1-block{
+	border-bottom:1px solid #A9A9A9;
+	width: 100%;
+	margin-top:260px;
+
+}
+.section1-block:after{
+	position: absolute;
+	content: '';
+	left:0;
+	right:0;
+	margin:auto;
+	width: 0px;
+	height: 0px;
+	display: block;
+	border-top:15px solid #A9A9A9;
+	border-left:15px solid transparent;
+	border-right:15px solid transparent;
+}
+.section2-block{
+	border-bottom:1px solid #A9A9A9;
+	width: 100%;
+	margin-top:190px;
+
+}
+.section2-block:after{
+	position: absolute;
+	content: '';
+	left:0;
+	right:0;
+	margin:auto;
+	width: 0px;
+	height: 0px;
+	display: block;
+	border-top:15px solid #A9A9A9;
+	border-left:15px solid transparent;
+	border-right:15px solid transparent;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 1em;
+  background: #fff;
+  pointer-events: none;
+}
+
+/* Transition */
+.select:hover::after {
+  color: #D62650;
+}
+.select::after {
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+.recipe-image {
+    width: 115px;
+    height: 115px;
+    border-radius: 2px;
+}
+.btn.btn-planner-gray {
+    background-color: #353535;
+    border: 0px;
+    border-radius: 0px;
+    color: #ccc;
+    height: 35px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 8px;
+}
+.btn.btn-planner-gray.pull-right {
+    margin-top: -70px;
+}
+	
+</style>
+<body>
+	<div class="container main">
+		<div class="row">
+			<h1 class="b">DIET PLANNER</h1>
+		</div>
+		<div class="row" style="position: relative;">
+			<div class="col-md-12 col-xs-12">
+				<div class="col-sm-4">
+					<label class="one">I AM A:</label>
+					<div class="select">
+					    <select name="slct" id="slct">
+					      <option>CHOOSE AN OPTION</option>
+					      <option value="male">MALE</option>
+					      <option value="fenale">FEMALE</option>
+					      
+					    </select>
+				  </div>
+					
+				</div>
+				<div class="col-sm-4">
+					<label class="one">I WANT TO:</label>
+					<div class="select">
+					    <select name="slct" id="slct">
+					      <option>CHOOSE AN OPTION</option>
+					      <option value="lw">LOOSE WEIGHT</option>
+					      <option value="mw">MAINTAIN WEIGHT</option>
+					      <option value="gw">GAIN WEIGHT</option>
+					    </select>
+				  </div>
+				</div>
+				<div class="col-sm-4">
+				<label class="one">DIET PREFRENCES:</label>
+					<div class="select">
+					    <select name="slct" id="slct">
+					      <option>CHOOSE AN OPTION</option>
+					      <option value="1">I DONT HAVE ANY</option>
+					      <option value="2">VEGETERIAN</option>
+					      <option value="3">DAIRY FREE</option>
+					    </select>
+				  </div>	
+				</div>	
+        	</div>
+        	<div class="section-block"></div>
+        </div>
+        <div class="row">
+        <div class="col-sm-12">
+        	<div class="col-sm-6" style="margin-top:4%;">
+        		<label class="one">NUMBER OF MEALS:</label>
+					<div class="select">
+					    <select name="slct" id="slct">
+					      <option>CHOOSE AN OPTION</option>
+					      <option value="3">3</option>
+					      <option value="4">4</option>
+					      <option value="5">5</option>
+					    </select>
+				  </div>
+        	</div>
+        	<div class="col-sm-6" style="margin-top:4%">
+        		<label class="one">NUMBER OF SNACKS:</label>
+					<div class="select">
+					    <select name="slct" id="slct">
+					      <option>CHOOSE AN OPTION</option>
+					      <option value="0">0</option>
+					      <option value="1">1</option>
+					      <option value="2">2</option>
+					    </select>
+				  </div>
+        	</div>
+        	</div>
+        	<div class="col-sm-12" style="margin-top: 4%">
+        	<br>
+        		<button class="btn btn-info btn-block" value="submit" style="height: 35px; background-color: #D62650; border: solid 2px #D62650;">submit</button>
+        		<br>
+        	</div>
+        	<div class="section1-block"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h4 class="rectitle">BREAKFAST</h4>
+				<div class="col-sm-2">
+					<img src="apple.jpg" class="recipe-image" width="50" height="50" >	
+				</div>
+				<div class="col-sm-10">
+					<h4 class="rectitle">APPLE WITH PEANUT BUTTER</h4>
+					<button class="btn btn-planner-gray pull-right clear-recipe" value="view recepie"> <img src="eye1.png"></img>VIEW RECEPIE</button>
+
+					<div class="col-sm-4">
+						<p>
+							<span class="rectitle1">CALORIES</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">PROTEIN</span>
+							<span class="pull-right rectitle1">6.6 g</span>
+						</p>
+						<p>
+							<span class="rectitle1">CARBOHYDRATE</span>
+							<span class="pull-right rectitle1">31.9 g</span>
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<p>
+							<span class="rectitle1">FATS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">SATURATED FATS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">MONOUNSATURATED FATS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<p>
+							<span class="rectitle1">POLYUNSATURATEDFATS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">SUGARS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">FIBRE</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="section2-block"></div>
+			<div class="col-sm-12">
+				<h4 class="rectitle">LUNCH</h4>
+				<div class="col-sm-2">
+					<img src="salmon.jpg" class="recipe-image" width="50" height="50" >	
+				</div>
+				<div class="col-sm-10">
+					<h4 class="rectitle">SALMON WITH GINGER BUTTER</h4>
+					<button class="btn btn-planner-gray pull-right clear-recipe" value="view recepie"> <img src="eye1.png"></img>VIEW RECEPIE</button>
+
+
+					<div class="col-sm-4">
+						<p>
+							<span class="rectitle1">CALORIES</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">PROTEIN</span>
+							<span class="pull-right rectitle1">6.6 g</span>
+						</p>
+						<p>
+							<span class="rectitle1">CARBOHYDRATE</span>
+							<span class="pull-right rectitle1">31.9 g</span>
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<p>
+							<span class="rectitle1">FATS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">SATURATED FATS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">MONOUNSATURATED FATS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<p>
+							<span class="rectitle1">POLYUNSATURATEDFATS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">SUGARS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">FIBRE</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="section2-block"></div>
+			<div class="col-sm-12">
+				<h4 class="rectitle">AFTERNOON MEALS</h4>
+				<div class="col-sm-2">
+					<img src="beet.jpeg" class="recipe-image" width="50" height="50" >	
+				</div>
+				<div class="col-sm-10">
+					<h4 class="rectitle">BEET ROOT SALAD</h4>
+					<button class="btn btn-planner-gray pull-right clear-recipe" value="view recepie"> <img src="eye1.png"></img>VIEW RECEPIE</button>
+
+
+					<div class="col-sm-4">
+						<p>
+							<span class="rectitle1">CALORIES</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">PROTEIN</span>
+							<span class="pull-right rectitle1">6.6 g</span>
+						</p>
+						<p>
+							<span class="rectitle1">CARBOHYDRATE</span>
+							<span class="pull-right rectitle1">31.9 g</span>
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<p>
+							<span class="rectitle1">FATS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">SATURATED FATS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">MONOUNSATURATED FATS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<p>
+							<span class="rectitle1">POLYUNSATURATEDFATS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">SUGARS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">FIBRE</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="section2-block"></div>
+			<div class="col-sm-12">
+				<h4 class="rectitle">DINNER</h4>
+				<div class="col-sm-2">
+					<img src="khichdi.jpeg" class="recipe-image" width="50" height="50" >	
+				</div>
+				<div class="col-sm-10">
+					<h4 class="rectitle">KHICHDI</h4>
+					<button class="btn btn-planner-gray pull-right clear-recipe" value="view recepie"> <img src="eye1.png"></img>VIEW RECEPIE</button>
+
+
+					<div class="col-sm-4">
+						<p>
+							<span class="rectitle1">CALORIES</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">PROTEIN</span>
+							<span class="pull-right rectitle1">6.6 g</span>
+						</p>
+						<p>
+							<span class="rectitle1">CARBOHYDRATE</span>
+							<span class="pull-right rectitle1">31.9 g</span>
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<p>
+							<span class="rectitle1">FATS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">SATURATED FATS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">MONOUNSATURATED FATS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<p>
+							<span class="rectitle1">POLYUNSATURATEDFATS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">SUGARS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">FIBRE</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="section2-block"></div>
+			<div class="col-sm-12">
+				<h4 class="rectitle">SNACK 1</h4>
+				<div class="col-sm-2">
+					<img src="almond.jpg" class="recipe-image" width="50" height="50" >	
+				</div>
+				<div class="col-sm-10">
+					<h4 class="rectitle">ALMONDS 20g</h4>
+					<button class="btn btn-planner-gray pull-right clear-recipe" value="view recepie"> <img src="eye1.png"></img>VIEW RECEPIE</button>
+
+
+					<div class="col-sm-4">
+						<p>
+							<span class="rectitle1">CALORIES</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">PROTEIN</span>
+							<span class="pull-right rectitle1">6.6 g</span>
+						</p>
+						<p>
+							<span class="rectitle1">CARBOHYDRATE</span>
+							<span class="pull-right rectitle1">31.9 g</span>
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<p>
+							<span class="rectitle1">FATS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">SATURATED FATS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">MONOUNSATURATED FATS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<p>
+							<span class="rectitle1">POLYUNSATURATEDFATS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">SUGARS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">FIBRE</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="section2-block"></div>
+			<div class="col-sm-12">
+				<h4 class="rectitle">SNACK2</h4>
+				<div class="col-sm-2">
+					<img src="yogurt.jpeg" class="recipe-image" width="50" height="50" >	
+				</div>
+				<div class="col-sm-10">
+					<h4 class="rectitle">YOGURT</h4>
+					<button class="btn btn-planner-gray pull-right clear-recipe" value="view recepie"> <img src="eye1.png"></img>VIEW RECEPIE</button>
+
+
+					<div class="col-sm-4">
+						<p>
+							<span class="rectitle1">CALORIES</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">PROTEIN</span>
+							<span class="pull-right rectitle1">6.6 g</span>
+						</p>
+						<p>
+							<span class="rectitle1">CARBOHYDRATE</span>
+							<span class="pull-right rectitle1">31.9 g</span>
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<p>
+							<span class="rectitle1">FATS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">SATURATED FATS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">MONOUNSATURATED FATS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<p>
+							<span class="rectitle1">POLYUNSATURATEDFATS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">SUGARS</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+						<p>
+							<span class="rectitle1">FIBRE</span>
+							<span class="pull-right rectitle1">242 KCAL</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

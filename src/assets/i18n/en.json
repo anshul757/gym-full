@@ -1,0 +1,152 @@
+{
+    "menu1": "CALORIE METER",
+    "menu2": "BMI INDEX",
+    "menu3": "DIET PLANNER",
+    "menu4": "EXERCISE",
+    "menu5": "YOGA",
+    "menu6": "REGISTRATION",
+    "menu7": "LOGIN",
+    "menu8": "ABOUT US",
+
+    "static0" : "BE FIT HERE",
+    "static1": "GOOD HEART",
+    "static11": "good heart leads to good life",
+    "static2": "GOOD MUSCELS",
+    "static21": "make big muscels not excuses",
+    "static3": "DO EXERCISE",
+    "static31": "DON'T WISH FOR GOOD BODY WORK FOR IT.",
+    "static4": "BE MOTIVATED",
+    "static41": "THE BODY ACHIVES WHAT MIND BELIVES",
+
+    "counter1": "EXERCISES",
+    "counter2":"CUSTOMERS",
+    "counter3": "FOODS",
+    "counter4": "YOGA",
+
+    "footerDescription": "Gyme is all about health and fitness. It will help you burn your calories and be healthy and fit.Be healthy & keep smiling.",
+    "footerAdderess": "Brainvire Infotech, Ahmedabad, India",
+    "footerPhone": "Phone (India) : +91 8735000077",
+    "footerEmail": "E-mail : anshul.shah@brainvire.com",
+
+    "linkHeading": "GENERAL LINKS",
+    "subscribe": "SUBSCRIBE US",
+    "subscribeButton": "SUBSCRIBE",
+    "subscribePlaceholder": "enter email",
+    "socialLinks": "Social Media",
+
+    "copyRights": "© 2018 - All Rights with Brainvire Infotech",
+
+    "bmiHeading": "BMI INDEX",
+    "bmiDescription": "A GENTLE STEP TOWARDS A HEALTHIER LIVING",
+    "bmiWeight": "ENTER weight (in kg)",
+    "bmiHeight": "ENTER HEIGHT (IN METERS)",
+    "bmiButton": "CALCULATE BMI",
+    "bmiAns": "BMI INDEX IS",
+    "bmiindexChart": "BMI INDEX CHART",
+    "bmiChartDescription": "DETAILED INFORMATION ABOUT BMI",
+
+    "dietplannerHeading": "DIET PLANNER",
+
+    "dietplannerGender": "I AM A:",
+    "dietplannerGenderOption1": "MALE",
+    "dietplannerGenderOption2": "FEMALE",
+
+
+    "dietplannerPriority": "I WANT TO:",
+    "dietplannerPriorityOption1": "LOOSE WEIGHT",
+    "dietplannerPriorityOption2": "MAINTAIN WEIGHT",
+    "dietplannerPriorityOption3": "GAIN WEIGHT",
+
+    "dietplannerPrefrences": "DIET PREFRENCES:",
+    "dietplannerPrefrencesOption1": "I DONT HAVE ANY",
+    "dietplannerPrefrencesOption2": "VEGETERIAN",
+    "dietplannerPrefrencesOption3": "DAIRY FREE",
+
+
+    "dietplannerMealsNo": "NUMBER OF MEALS:", 
+    "dietplannerSnacksNo": "NUMBER OF SNACKS:",
+    "dietplannerButton" : "SUBMIT",
+
+    "exerciseHeading": "EXERCISES",
+    "exerciseOption1": "FULL BODY",
+    "exerciseOption2": "ABS",
+    "exerciseOption3": "ARMS",
+    "exerciseOption4": "LEGS",
+    "exerciseOption5": "CHEST",
+    "exerciseOption6": "BACK",
+    "essentialWorkoutTips": "Esssential Tips for Perfect Workout",
+    "tipsPara1": "Great minds think alike, great workout programs work alike, too.From elite level athletes to local strength and conditioning coaches, all good training plans share below given features",
+    "tipsPoint1": "Change your repetitions every few weeks",
+    "tipsPoint11": "Repetitions control everything from your strength and size gains to how your muscels develope and look.always follow this phases for better results",
+    "tipsPoint12": "Month one:8 reps",
+    "tipsPoint13": "Month two:15 reps",
+    "tipsPoint14": "Month three:6 reps",
+    "tipsPoint15": "Month four:12 reps",
+    "tipsPoint16": "Always do the most important exercise first",
+    "tipsPoint16.1": "By doing the hardest exercises first, you will save you strength for when you really need it.",
+    "tipsPoint17": "Move in all the directions.",
+    "tipsPoint17.1": "To encore the strength of the whole body, workout with all the parts fo the body.",
+    "tipsPoint18": "Be regular.",
+    "tipsPoint18.1": "Excuses don't get results.be regular in your workouts.",
+    "trainerHeading": "Some Famous trainers you can follow",
+    "fitnesscentreHeading": "FITNESS CENTERS NEAR YOU",
+
+
+    "Yoga": {
+        "yogaHeading": "YOGA",
+        "yogaOption1": "BURN FAT",
+        "yogaOption2": "DEPRESION",
+        "yogaOption3": "Constipation",
+        "yogaOption4": "Indigestion",
+        "yogaOption5": "Diabetes",
+        "yogaOption6": "Heart Disease",
+
+        "yogaTips": "Esssential Tips for Perfect YOGA",
+        "tipsPoint1": "yoga is the journey of the self, to the self, through the self. Follow the below tips to practice better.",
+        "tipsPoint1.1": "Choose a convenient time.",
+        "tipsPoint2": "Practicing yoga in the morning is generally considered to be the best as it keeps energy levels high during the day. Yet, if it doesn’t happen, don’t let it be an excuse to skip your practice.",
+        "tipsPoint2.1":"Choose a comfortable place.",
+        "tipsPoint3": "It would be best to have a small, private room in your house for daily yoga practice. Over time, your practices will create positive vibrations in the room, providing healing, strength and comfort to you and others at home. However, in case it is not possible, you may choose a quiet space anywhere at home, which is large enough to roll out your yoga mat and where you know you are not likely to be disturbed for a while.",
+        "tipsPoint3.1": "Practice on a relatively empty stomach",
+        "tipsPoint4": "Yoga postures are always best practiced on a light or empty stomach. You can practice yoga poses and meditate about 2-3 hours after your meal.",
+        "tipsPoint4.1": "Keep your yoga wear simple",
+        "tipsPoint5": "Go for loose, comfortable clothing – you wouldn’t want tight body-hugging outfits coming in the way of doing some wide stretches! Also, keep aside any excessive jewelry that you are wearing and avoid heavy makeup."
+    },
+
+    "login": {
+        "loginheading": "LOGIN",
+        "usernamePlaceholder": "username",
+        "passwordplaceholder": "password",
+        "loginButton": "login"
+    },
+
+    "Registration": {
+        "registrationHeading": "REGISTRATION",
+        "nameLabel": "Your Name",
+        "namePlaceholder": "enter your name",
+        "emailLabel":"Your Email",
+        "emailPlaceholder": "enter email",
+        "usernameLabel": "Username",
+        "usernamePlaceholder": "enter your username",
+        "passwordLabel": "PASSWORD",
+        "passwordPlaceholder": "enter your password",
+        "conformPasswordLabel": "CONFORM PASSWORD",
+        "conformPasswordPlaceholder": "confirm your password",
+        "registerButton": "REGISTER" 
+    },
+
+    "aboutus": {
+        "label": "Contact Us",
+        "getinTouch": "Get in Touch",
+        "namePlaceholder": "NAME",
+        "emailPlaceholder": "EMAIL",
+        "phonePlaceholder": "PHONE",
+        "messagePlaceholder": "MESSAGE",
+        "submitButton": "SUBMIT"
+    }
+}
+
+
+
+
+

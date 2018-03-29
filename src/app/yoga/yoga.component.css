@@ -1,0 +1,319 @@
+agm-map {
+  height: 300px;
+}
+.line{
+  float: right;
+  width: 80%;
+  height: 1px;
+  background: #D62650;
+
+}
+.title:after{
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 50%;
+  background: #000000;
+  right: 50;
+  top: 40;
+  left: 500;
+  background: #D62650;
+}
+.f
+{
+
+}
+/***** ----- Service part start ----- *****/
+
+.single-service {
+  padding: 15px 0;
+  text-align: center;
+  transition: all 0.5s ease 0s;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 120px;
+}
+
+.single-service:hover {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.12);
+}
+
+.single-icon-img {
+  border: 1px solid #D63138;
+  border-radius: 50%;
+  display: inline-block;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  width: 70px;
+}
+
+.single-icon-img img {
+  max-width: 100%;
+}
+
+.single-service h3 {
+  margin: 10px 0;
+}
+
+.single-service p {
+  font-size: 10px;
+  font-weight: 100;
+  padding: 0 12px;
+}
+/* box part ends */
+
+
+/***** ----- About gym part start ----- *****/
+
+.about-gym-area {
+    background: #f1f1f1  no-repeat fixed left center / contain;
+    position: relative;
+}
+
+.about-gym-area .title::before {
+    display: none;
+}
+
+.gym-video {
+    border: 5px solid #d63138;
+    margin-bottom: 40px;
+    padding: 5px;
+}
+
+
+/***** ----- About gym part end ----- *****/
+
+
+/***** ----- trainer part start ----- *****/
+
+.trainer-part {
+  margin-bottom: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.trainer-part>img {
+  width: 100%;
+  height: auto;
+}
+
+.trainer-dec {
+  background-color: #D63138;
+  bottom: 0;
+  color: #fff;
+  font-weight: 300;
+  padding: 10px 0;
+  position: absolute;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+}
+
+.trainer-dec h3 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.trainer-dec h4 {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.trainer-dec i.fa {
+  color: #ffae00;
+  font-size: 16px;
+}
+
+.trainer-social-link {
+  background-color: #D63138;
+  bottom: 0;
+  font-size: 16px;
+  padding: 10px 0;
+  position: absolute;
+  width: 100%;
+}
+
+.trainer-social-link i.fa {
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+  transition: all 1s ease 0s;
+  width: 30px;
+}
+
+.trainer-social-link i.fa:hover {
+  background-color: #fff;
+  border-radius: 50%;
+  color: #D63138;
+}
+
+.trainer-part:hover .trainer-dec {
+  bottom: 38px;
+}
+
+
+/***** ----- trainer part end ----- *****/
+
+/* gallery part start */
+/************ gallery part start **********/
+
+/* .start{
+  margin: 0;
+  padding: 0;
+  background: #D62650;
+  font: 10px/13px 'Lucida Sans',sans-serif;
+} */
+
+.wrap {
+  overflow: hidden;
+  margin: 10px;
+}
+.box {
+  float: left;
+  position: relative;
+  width: 20%;
+  padding-bottom: 20%;
+}
+.boxInner {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+.boxInner img {
+  width: 100%;
+}
+.boxInner .titleBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: -50px;
+  background: #000;
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  padding: 10px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.start.no-touch .boxInner:hover .titleBox, .start.touch .boxInner.touchFocus .titleBox {
+  margin-bottom: 0;
+}
+@media only screen and (max-width : 480px) {
+  /* Smartphone view: 1 tile */
+  .box {
+     width: 100%;
+     padding-bottom: 100%;
+  }
+}
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+  /* Tablet view: 2 tiles */
+  .box {
+     width: 50%;
+     padding-bottom: 50%;
+  }
+}
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+  /* Small desktop / ipad view: 3 tiles */
+  .box {
+     width: 33.3%;
+     padding-bottom: 33.3%;
+  }
+}
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+  /* Medium desktop: 4 tiles */
+  .box {
+     width: 25%;
+     padding-bottom: 25%;
+  }
+}
+
+.selectableImageContainer {
+border: 1px solid #CCC;
+padding: 5px;
+margin: 7px;
+float: left;
+width: 212px;
+text-align: center;
+}
+
+.zoom_toolbar_button {
+height: 32px;
+width: 32px;
+float: right;
+border-radius: 4px;
+margin-left: 2px;
+margin-top: 8px;
+cursor: pointer;
+border: 1px solid #000000;
+padding: 6px 0 0 3px;
+}
+
+.approved_image_toolbar_button {
+background-color: #8bc249;
+height: 32px;
+width: 32px;
+float: right;
+border-radius: 4px;
+margin-left: 2px;
+margin-top: 8px;
+cursor: pointer;
+padding: 6px 0 0 3px;
+}
+
+.disapproved_image_toolbar_button {
+background-color: #bb232a;
+height: 32px;
+width: 32px;
+float: right;
+border-radius: 4px;
+margin-left: 2px;
+margin-top: 8px;
+cursor: pointer;
+padding: 6px 0 0 1px;
+}
+
+.reviewIssuesButton {
+margin-left: 20px;
+color: #ffffff;
+background-color: #00aeef;
+}
+
+.markAllReviewed {
+background-color: #00aeef;
+margin-bottom: 20px;
+margin-top: 10px;
+color: #ffffff;
+}
+
+.white {
+color: #ffffff;
+}
+.customDialog > .modal-dialog{
+left:auto !important;
+max-width: 420px !important;
+}
+.customDialog > .modal-dialog .modal-header .close{
+display:none;
+}
+.customDialog > .modal-dialog img{
+width: 100%;
+}
+@media (max-width:991px) {
+ .img_space {
+   margin-bottom: 10px;
+ }
+
+
+}
+/* gallery part end */

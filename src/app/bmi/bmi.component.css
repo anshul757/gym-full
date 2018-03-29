@@ -1,0 +1,107 @@
+.content-header{
+  font-family: 'Oleo Script', cursive;
+  color:#fcc500;
+  font-size: 45px;
+}
+
+.section-content{
+  text-align: center;
+
+}
+
+
+#contact{
+  font-family: 'Teko', sans-serif;
+  padding-top: 60px;
+  width: 100%;
+  /* width: 100vw; */
+  height: 550px;
+  opacity:0.7;
+  background-image: url("/assets/imgs/2.jpg");
+  color : #fff;
+}
+.contact-section{
+  padding-top: 40px;
+}
+.contact-section .col-md-6{
+  width: 50%;
+}
+
+.form-line{
+  border-right: 1px solid #B29999;
+}
+
+.form-group{
+  margin-top: 10px;
+}
+label{
+  font-size: 1.3em;
+  line-height: 1em;
+  font-weight: normal;
+}
+.form-control{
+
+font-size: 1.3em;
+  color: #080808;
+}
+textarea.form-control {
+    height: 135px;
+   /* margin-top: px;*/
+}
+
+.submit{
+  font-size: 1.1em;
+  float: right;
+  width: 150px;
+  background-color: transparent;
+  color: #fff;
+
+}
+
+
+.moderate_thinness{
+  background-color:#00a8e4;
+}
+
+.severe_thinness{
+  background-color:#0059e2;
+}
+
+.normal{
+  background-color:#00c45c;
+}
+
+.overweight{
+  background-color:#ffd03f;
+}
+
+.obese{
+  background-color:#f49530;
+}
+
+
+
+.obese2{
+  background-color:#cf3310;
+}
+
+
+.obese3{
+  background-color:#ff001b;
+}
+
+tr.hide_all > td, td.hide_all{
+  /* border-style:hidden; */
+  border: 0;
+}
+
+.a{
+    text-align:right; 
+}
+.table > tbody >  tr > td{
+    border-top:0; 
+}
+
+.b{
+    text-align: left;
+}

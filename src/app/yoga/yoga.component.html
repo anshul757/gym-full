@@ -1,0 +1,500 @@
+<div class="container" style="margin-top:67px">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="" style="padding-left: 5%">
+        <h1 style="font-weight: 1100">
+          <span style="color: #D62650;">{{ 'Yoga.yogaHeading' | translate }}</span>
+        </h1>
+        <!-- <img src="line.png"> -->
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-3 col-md-2">
+      <div class="single-service">
+        <div class="single-icon-img">
+          <img src="./assets/imgs/fullbody.png" alt="" (click)="onSubmit('burnfat')" width=50px; height=50px;>
+        </div>
+        <h4>{{ 'Yoga.yogaOption1' | translate }}</h4>
+
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-3 col-md-2">
+      <div class="single-service">
+        <div class="single-icon-img">
+          <img src="./assets/imgs/abs.png" alt="" (click)="onSubmit('depresion')" width=50px; height=50px;>
+        </div>
+        <h4>{{ 'Yoga.yogaOption2' | translate }}</h4>
+
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-3 col-md-2">
+      <div class="single-service">
+        <div class="single-icon-img">
+          <img src="./assets/imgs/legs.png" alt="" width=50px; (click)="onSubmit('constipation')" height=50px;>
+        </div>
+        <h4>{{ 'Yoga.yogaOption3' | translate }}</h4>
+
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-3 col-md-2">
+      <div class="single-service">
+        <div class="single-icon-img">
+          <img src="./assets/imgs/chest.png" alt="" (click)="onSubmit('indigestion')" width=50px; height=50px; style="margin-top: 20%">
+        </div>
+        <h4>{{ 'Yoga.yogaOption4' | translate }}</h4>
+
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-3 col-md-2">
+      <div class="single-service">
+        <div class="single-icon-img">
+          <img src="./assets/imgs/back.png" alt="" (click)="onSubmit('diabities')" width=50px; height=50px; style="margin-top: 20%">
+        </div>
+        <h4>{{ 'Yoga.yogaOption5' | translate }}</h4>
+
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-3 col-md-2">
+      <div class="single-service">
+        <div class="single-icon-img">
+          <img src="./assets/imgs/abs.png" alt="" (click)="onSubmit('heart')" width=50px; height=50px;>
+        </div>
+        <h4>{{ 'Yoga.yogaOption6' | translate }}</h4>
+
+      </div>
+    </div>
+  </div>
+  <div class="no-touch start">
+    <div *ngFor="let r of result; let i = index;">
+      <div class="box" data-toggle="modal" [attr.data-target]="'#myModal'+ i">
+        <div class="boxInner">
+          <img src="http://localhost:3000/uploads/{{r.filename}}" />
+          <div class="titleBox">{{r.name}}</div>
+        </div>
+      </div>
+      <div class="modal fade customDialog" id="myModal{{i}}" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h1 class="modal-title">{{r.name}}</h1>
+            </div>
+            <div class="modal-body">
+              <div class="">
+                <img src="http://localhost:3000/uploads/{{r.filename}}" />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" style="background-color:#f1f1f1">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title">
+          <h1 style="color: #D62650;">
+            <span>{{ 'Yoga.yogaTips' | translate }}</span></h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="about-us-content">
+          <br>
+          <p>{{ 'Yoga.tipsPoint1' | translate }}</p>
+
+
+          <ul class="check-list">
+            <li>{{ 'Yoga.tipsPoint1.1' | translate }}</li>
+          </ul>
+          <p class="b">{{ 'Yoga.tipsPoint2' | translate }}</p>
+
+          <br>
+
+          <ul class="check-list">
+            <li>{{ 'Yoga.tipsPoint2.1' | translate }}</li>
+          </ul>
+
+          <p class="b">{{ 'Yoga.tipsPoint3' | translate }}</p>
+
+          <ul class="check-list">
+            <li>{{ 'Yoga.tipsPoint3.1' | translate }}</li>
+          </ul>
+          <p class="b">{{ 'Yoga.tipsPoint4' | translate }}</p>
+
+          <ul class="check-list">
+            <li>{{ 'Yoga.tipsPoint4.1' | translate }}</li>
+          </ul>
+
+          <p class="b">{{ 'Yoga.tipsPoint5' | translate }}</p>
+
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <div class="" style="margin-left:5%">
+          <img src="./assets/imgs/yoga.png" width="305px" height="305px" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="trainer" class="trainer-area section-padding" style="margin-top:5%">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title">
+            <h1 style="color: #D62650;">
+              <span>{{ 'trainerHeading' | translate }}</span></h1>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <div class="trainer-part">
+            <img src="./assets/imgs/t1.jpg" alt="">
+            <div class="trainer-dec">
+
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+            </div>
+            <!-- Trainer Social Links -->
+            <div class="trainer-social-link">
+              <a href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Trainer part -->
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="trainer-part">
+            <img src="./assets/imgs/t2.jpg" alt="">
+            <div class="trainer-dec">
+
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+            </div>
+            <!-- Trainer Social Links -->
+            <div class="trainer-social-link">
+              <a href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Trainer part -->
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="trainer-part">
+            <img src="./assets/imgs/t3.jpg" alt="">
+            <div class="trainer-dec">
+
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+            </div>
+            <!-- Trainer Social Links -->
+            <div class="trainer-social-link">
+              <a href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Trainer part -->
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="trainer-part">
+            <img src="./assets/imgs/t4.jpg" alt="">
+            <div class="trainer-dec">
+
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+            </div>
+            <!-- Trainer Social Links -->
+            <div class="trainer-social-link">
+              <a href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Trainer part -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <div class="trainer-part">
+            <img src="images/trainer/01.jpg" alt="">
+            <div class="trainer-dec">
+              <h3>thom. muller</h3>
+              <h4>gym instructor</h4>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+            </div>
+            <!-- Trainer Social Links -->
+            <div class="trainer-social-link">
+              <a href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Trainer part -->
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="trainer-part">
+            <img src="images/trainer/02.jpg" alt="">
+            <div class="trainer-dec">
+              <h3>lily adams</h3>
+              <h4>Yoga Instructor</h4>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+            </div>
+            <!-- Trainer Social Links -->
+            <div class="trainer-social-link">
+              <a href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Trainer part -->
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="trainer-part">
+            <img src="images/trainer/03.jpg" alt="">
+            <div class="trainer-dec">
+              <h3>Andrew. russell</h3>
+              <h4>Weight Trainer</h4>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+            </div>
+            <!-- Trainer Social Links -->
+            <div class="trainer-social-link">
+              <a href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Trainer part -->
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="trainer-part">
+            <img src="images/trainer/04.jpg" alt="">
+            <div class="trainer-dec">
+              <h3>sofia</h3>
+              <h4>Aerobics Instructor</h4>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+            </div>
+            <!-- Trainer Social Links -->
+            <div class="trainer-social-link">
+              <a href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Trainer part -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section map-wrapper">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title">
+          <h1 style="color: #D62650;margin-left:3%">
+            <span>{{ 'fitnesscentreHeading' | translate }}</span>
+          </h1>
+        </div>
+        <!-- <div class="map-wrapper"> -->
+        <agm-map [latitude]="lat" [longitude]="lng">
+          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
+        <!-- </div> -->
+
+      </div>
+
+
+    </div>
+  </div>
+</div>

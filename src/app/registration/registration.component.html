@@ -1,0 +1,127 @@
+<html>
+
+<body>
+
+
+  <div class="container">
+    <div class="row main">
+
+      <div class="main-login main-center">
+        <form class="form-horizontal" #regform="ngForm" novalidate>
+
+          <div class="form-group">
+
+            <!-- <img src="user.png" height="80" style="margin-left: 33%"></img> -->
+            <h4 style="text-align: center;">{{ 'Registration.registrationHeading' | translate }}</h4>
+            <br>
+            <label for="name" class="cols-sm-2 control-label">{{ 'Registration.nameLabel' | translate }}</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <i class="fa fa-user fa" aria-hidden="true"></i>
+                </span>
+                <input type="text" #rnameref="ngModel" [(ngModel)]="name" required class="form-control" name="name" id="name" placeholder="{{ 'Registration.namePlaceholder' | translate }}"
+                  ngModel/>
+              </div>
+            </div>
+            <p [hidden]="rnameref.valid || rnameref.pristine" class="alert alert-danger">
+              PLEASE ENTER NAME
+            </p>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="cols-sm-2 control-label">{{ 'Registration.emailLabel' | translate }}</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <i class="fa fa-envelope fa" aria-hidden="true"></i>
+                </span>
+                <input type="text" [(ngModel)]="email" #rmailref="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required class="form-control" name="email"
+                  id="email" placeholder="{{ 'Registration.emailPlaceholder' | translate }}" ngModel/>
+
+              </div>
+            </div>
+            <div *ngIf="rmailref.errors && (rmailref.dirty || rmailref.touched)" class="alert alert-danger">
+              <div [hidden]="!passref.errors.required">
+                PLEASE ENTER EMAIL
+              </div>
+              <br>
+              <div [hidden]="!passref.errors.pattern">
+                PLEASE ENTER EMAIL IN VALID FORMAT. FOR EX: a@gmail.com
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="form-group">
+            <label for="username" class="cols-sm-2 control-label">{{ 'Registration.usernameLabel' | translate }}</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <i class="fa fa-users fa" aria-hidden="true"></i>
+                </span>
+                <input type="text" [(ngModel)]="username" #rusernameref="ngModel" class="form-control" name="username" id="username" placeholder="{{ 'Registration.usernamePlaceholder' | translate }}"
+                  ngModel required/>
+
+              </div>
+            </div>
+            <div [hidden]="rusernameref.valid || rusernameref.pristine" class="alert alert-danger">
+              PLEASE ENTER USER NAME
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password" class="cols-sm-2 control-label">{{ 'Registration.passwordLabel' | translate }}</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <i class="fa fa-lock fa-lg" aria-hidden="true"></i>
+                </span>
+                <input type="password" [(ngModel)]="password" #rpasswordref="ngModel" required class="form-control" name="password" id="password" placeholder="{{ 'Registration.passwordPlaceholder' | translate }}"
+                  ngModel/>
+
+              </div>
+              <small [hidden]="rpasswordref.valid || rpasswordref.pristine" class="alert alert-danger">
+                PLEASE ENTER PASSWORD
+              </small>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="confirm" class="cols-sm-2 control-label">{{ 'Registration.conformPasswordLabel' | translate }}</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <i class="fa fa-lock fa-lg" aria-hidden="true"></i>
+                </span>
+                <input type="password" validateEqual="password" #rcpasswordref="ngModel" required class="form-control" name="confirm" id="confirm"
+                  placeholder="{{ 'Registration.conformPasswordPlaceholder' | translate }}" ngModel/>
+
+              </div>
+              <small *ngIf="rcpasswordref.errors && (rcpasswordref.dirty || rcpasswordref.touched)" class="">
+                <small [hidden]="!passref.errors.required">
+                  PLEASE ENTER PASSWORD
+                </small>
+                <small [hidden]="!passref.errors.validateEqual">
+                  PASSWORD MISMATCH. ENTER AGAIN
+                </small>
+
+              </small>
+            </div>
+          </div>
+
+
+          <div class="form-group ">
+            <button type="button" (click)="onRegisterSubmit()" class="btn btn-primary btn-lg btn-block login-button">{{ 'Registration.registerButton' | translate }}</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+
+</body>
+
+</html>

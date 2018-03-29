@@ -1,0 +1,57 @@
+/* .body{
+  background-image: url("/assets/imgs/s3.jpg");
+  background-repeat: no-repeat;
+} */
+.bg-image{
+  background-image: url("/assets/imgs/s3.jpg");
+  background-size: cover;
+  padding-top: 125px;
+  padding-bottom: 20px;
+}
+    /* .wrapper{
+margin-top: 85px;
+} */
+.form-signin{
+max-width: 420px;
+padding: 30px 38px 66px;
+margin: 0 auto;
+border: 1px solid #cccccc;
+}
+.input-group{
+height: 45px;
+margin-bottom: 15px;
+border-radius: 0px;
+color: #D62650;
+}
+.form-control{
+height: 45px;
+color: #D62650;
+}
+.input-group:hover span i{
+color: #D62650;
+}
+.btn-block{
+border-radius: 0px;
+margin-top: 25px;
+background-color: #D62650;
+border: none;
+}
+.btn-block:hover{
+background-color: #D62650;
+}
+.bol{
+position: relative;
+margin-top: -40px;
+color: #D62650;
+}
+.h3{
+font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+font-size: 40px;
+font-style: normal;
+font-variant: normal;
+font-weight: 500;
+line-height: 26.4px;
+color: #D62650;
+margin: 0 auto;
+text-align: center;
+}

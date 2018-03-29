@@ -1,0 +1,52 @@
+<!-- <html>
+
+<body class="body">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+  <div class="container-fluid bg-image">
+    <div class="wrapper">
+      <form #userform="ngForm"  class="form-signin" novalidate>
+        <div class="row text-center bol">
+          <i class="fa fa-circle"></i>
+        </div>
+        <h3 class="form-signin-heading text-center">
+          <img src="./assets/imgs/login2.png" alt="" />
+        </h3>
+        <h1 class="h3">{{ 'login.loginheading' | translate }}</h1>
+        <hr class="spartan">
+        <form></form>
+        <div class="input-group">
+          <span class="input-group-addon" id="sizing-addon1">
+            <i class="fa fa-user"></i>
+          </span>
+          <input type="text" #nameref="ngModel" [(ngModel)]="username" class="form-control" name="username" placeholder=" {{ 'login.usernamePlaceholder' | translate }}" required="" autofocus=""
+            ngModel/>
+        </div>
+        <div [hidden]="nameref.valid || nameref.pristine" class="alert alert-danger">
+         
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon" id="sizing-addon1">
+            <i class="fa fa-lock"></i>
+          </span>
+          <input type="password" [(ngModel)]="password" #passref="ngModel" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" minlength="6" class="form-control"
+            name="Password" placeholder="{{ 'login.passwordplaceholder' | translate }}" required="" ngModel />
+        </div>
+        <div *ngIf="passref.errors && (passref.dirty || passref.touched)" class="alert alert-danger">
+          <div [hidden]="!passref.errors.required">
+            
+          </div>
+          <div [hidden]="!passref.errors.minlength">
+            PASSWORD MUST CONTAIN 6 CHARACTERS
+          </div>
+          <div [hidden]="!passref.errors.pattern">
+            PASSWORD MUST CONTAIN ATLEAST ONE NUMBER, ONE UPPER CASE AND ONE LOWER CASE LETTER.
+          </div>
+
+        </div>
+        <input class="btn btn-lg btn-primary btn-block" name="Submit" type="Submit" value="{{ 'login.loginButton' | translate }}">
+      </form>
+    </div>
+  </div>
+<!-- </body>
+
+</html> -->
