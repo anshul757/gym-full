@@ -69,3 +69,8 @@ app.listen(port, ()=>{
 console.log('server started on port' +port);
 });
 
+// node mailer code start
+'use strict';
+
+
+

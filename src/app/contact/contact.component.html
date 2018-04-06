@@ -15,20 +15,54 @@
 
         <div class="col-md-5">
             <h4><strong>{{ 'aboutus.getinTouch' | translate }}</strong></h4>
-          <form (submit)= onFeedbackSaved()>
+          <form (submit)= onFeedbackSaved() #contactForm="ngForm">
             <div class="form-group">
-              <input type="text" class="form-control" [(ngModel)]="name" name="name" value="" placeholder="{{ 'aboutus.namePlaceholder' | translate }}">
+              <input type="text" class="form-control" [(ngModel)]="name" name="name" value="" placeholder="{{ 'aboutus.namePlaceholder' | translate }}"
+              #nameRef="ngModel" required>
+              <label [hidden] *ngIf="nameRef.errors && nameRef.dirty">
+                <label [hidden]="!nameRef.errors.required" style="color:red">
+                  name is required
+                </label>
+
+              </label>
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" [(ngModel)]="email" name="email" value="" placeholder="{{ 'aboutus.emailPlaceholder' | translate }}">
+              <input type="email"  class="form-control" [(ngModel)]="email" name="email" value="" placeholder="{{ 'aboutus.emailPlaceholder' | translate }}"
+              #emailRef="ngModel" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+              <label [hidden] *ngIf="emailRef.errors && emailRef.dirty">
+                  <label [hidden]="!emailRef.errors.required" style="color:red">
+                    email is required
+                  </label>
+                  <label [hidden]="!emailRef.errors.pattern" style="color:red">
+                      email must be in proper format. ex:-abc@x.com
+                    </label>
+                </label>
             </div>
             <div class="form-group">
-              <input type="tel" class="form-control" [(ngModel)]="phone" name="phone" value="" placeholder="{{ 'aboutus.phonePlaceholder' | translate }}">
+              <input type="tel" class="form-control" pattern= "[0-9]"  
+               minlength="10" maxlength="10" [(ngModel)]="phone" name="phone"  placeholder="{{ 'aboutus.phonePlaceholder' | translate }}"
+               #phoneRef="ngModel" required>
+
+               <label [hidden] *ngIf="phoneRef.errors && phoneRef.dirty">
+                  <label [hidden]="!phoneRef.errors.required" style="color:red">
+                    email is required
+                  </label>
+                  <!-- <label [hidden]="!phoneRef.errors.pattern" style="color:red">
+                      email must be in proper format. ex:-abc@x.com
+                    </label> -->
+                </label>
+
             </div>
             <div class="form-group">
-              <textarea class="form-control" name="message" rows="3" [(ngModel)]="message" placeholder="{{ 'aboutus.messagePlaceholder' | translate }}"></textarea>
+              <textarea class="form-control" name="message" rows="3" [(ngModel)]="message" placeholder="{{ 'aboutus.messagePlaceholder' | translate }}"
+              #msgRef="ngModel" required></textarea>
+              <label [hidden] *ngIf="msgRef.errors && msgRef.dirty">
+                  <label [hidden]="!msgRef.errors.required" style="color:red">
+                    email is required
+                  </label>
+                </label>
             </div>
-            <input class="btn btn-default  fa fa-paper-plane-o" type="submit" name="button" value="{{ 'aboutus.submitButton' | translate }}" style="border:solid 2px #D62650 ">
+            <input class="btn btn-default  fa fa-paper-plane-o" [disabled]="!contactForm.valid" type="submit" name="button" value="{{ 'aboutus.submitButton' | translate }}" style="border:solid 2px #D62650 ">
                 <!-- <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Submit -->
 
           </form>
